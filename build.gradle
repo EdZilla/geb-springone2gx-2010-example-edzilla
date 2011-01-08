@@ -28,10 +28,10 @@ configurations {
 
 dependencies {
 	groovy "org.codehaus.groovy:groovy-all:1.7.5"
-	testCompile "org.spockframework:spock-core:0.5-groovy-1.7-SNAPSHOT"
+	testCompile "org.spockframework:spock-core:0.5-groovy-1.7"
 
 	// Need Geb Spock (pulls in geb-core)
-	testCompile "org.codehaus.geb:geb-spock:0.5-SNAPSHOT"
+	testCompile "org.codehaus.geb:geb-spock:0.5"
 	
 	// Need some drivers
 	testCompile "org.seleniumhq.selenium:selenium-firefox-driver:2.0a5"
@@ -53,5 +53,5 @@ if (project.hasProperty('t')) {
 }   
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '0.9-rc-1'
+    gradleVersion = '0.9.1'
 }
