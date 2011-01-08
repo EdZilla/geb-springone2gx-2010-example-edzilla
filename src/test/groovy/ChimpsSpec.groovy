@@ -32,7 +32,12 @@ class ChimpsSpec extends BaseSpec {
 			def table = $("table", class: "simpleTable", id:"left_table")
 			println table
 			println $("tr")
+			println $("tr", 2)
 			println $("tr",2).text()
+			println $("tr",3).text()
+			println $("tr",4).text()
+			println ("form")
+			//println ("form").find("input", name: "username")
 		}
 		
 		then:
