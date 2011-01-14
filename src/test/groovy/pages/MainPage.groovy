@@ -10,8 +10,7 @@ import modules.*
 class MainPage extends BasePage {
 
 	static content = {
-		// All pages have the navigation menu, this will be inherited
-		navigation { module(Navigation, $("ul#showNavButtons")) }
+
 	}
 
 }
